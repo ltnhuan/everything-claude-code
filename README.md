@@ -1,6 +1,6 @@
-**Language:** English | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md) | [Türkçe](docs/tr/README.md)
+**Ngôn ngữ:** Tiếng Việt | [English](README.md) | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md) | [Türkçe](docs/tr/README.md)
 
-# Everything Claude Code
+# EraGenAI
 
 [![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
 [![Forks](https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/network/members)
@@ -17,26 +17,29 @@
 ![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
 
-> **140K+ stars** | **21K+ forks** | **170+ contributors** | **12+ language ecosystems** | **Anthropic Hackathon Winner**
+> **Bản Việt hóa & tái thương hiệu: EraGenAI** | **Tác giả: NhuanLT**
 
 ---
 
 <div align="center">
 
-**Language / 语言 / 語言 / Dil**
+**Ngôn ngữ / Language / 语言 / 語言 / Dil**
 
-[**English**](README.md) | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
+[**Tiếng Việt**](README.md) | [English](README.md) | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
  | [Türkçe](docs/tr/README.md)
 
 </div>
 
 ---
 
-**The performance optimization system for AI agent harnesses. From an Anthropic hackathon winner.**
+**Hệ thống tối ưu hiệu năng cho AI agent harnesses dành cho môi trường production.**
 
-Not just configs. A complete system: skills, instincts, memory optimization, continuous learning, security scanning, and research-first development. Production-ready agents, skills, hooks, rules, MCP configurations, and legacy command shims evolved over 10+ months of intensive daily use building real products.
+Không chỉ là bộ cấu hình. Đây là hệ sinh thái đầy đủ gồm: skills, instinct workflows, tối ưu bộ nhớ, học liên tục, quét bảo mật và quy trình phát triển ưu tiên nghiên cứu. Bộ agents, skills, hooks, rules, cấu hình MCP và command shims được tổ chức để áp dụng thực chiến.
 
-Works across **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Gemini**, and other AI agent harnesses.
+Hoạt động trên **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Gemini** và các AI agent harness khác.
+
+**Thương hiệu hiện tại:** EraGenAI  
+**Tác giả bảo trì:** NhuanLT
 
 ---
 
