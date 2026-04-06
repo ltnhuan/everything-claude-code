@@ -72,3 +72,74 @@ Tài liệu này liệt kê nhanh các chức năng cốt lõi đang có trong r
 - [ ] Bật rules + hooks mức chuẩn
 - [ ] Thiết lập security scan định kỳ
 - [ ] Chuẩn hóa quy trình Plan → TDD → Review → Security trước khi merge
+
+## 6) Hướng dẫn code (chuẩn thực thi đề xuất)
+
+Mục tiêu của bộ khung là giúp bạn code có cấu trúc, giảm lỗi, và giữ chất lượng ổn định khi làm việc với AI agent.
+
+### Chu trình code chuẩn
+
+1. **Plan trước khi code**
+   - Dùng planner để chia task thành milestone nhỏ.
+   - Xác định rõ input/output, rủi ro, tiêu chí hoàn tất.
+
+2. **TDD trước**
+   - Viết test fail (RED) cho hành vi cần có.
+   - Chỉ code mức tối thiểu để pass test (GREEN).
+   - Refactor giữ test xanh (IMPROVE).
+
+3. **Review bắt buộc**
+   - Chạy code-reviewer sau mỗi cụm thay đổi có ý nghĩa.
+   - Nếu chạm dữ liệu nhạy cảm hoặc API công khai, chạy thêm security-reviewer.
+
+4. **Quality gate trước commit**
+   - Chạy lint + test + (nếu có) e2e cho flow quan trọng.
+   - Chỉ commit khi không có lỗi mức CRITICAL/HIGH.
+
+### Mẫu prompt ngắn để code theo khung
+
+```text
+Hãy triển khai tính năng X theo quy trình:
+1) planner: tách milestone
+2) tdd-guide: viết test trước
+3) code-reviewer: review sau khi pass test
+4) security-reviewer: kiểm tra input validation và secrets
+Yêu cầu output: kế hoạch + patch + test plan.
+```
+
+## 7) Hướng dẫn sử dụng bộ khung 47/181/79 trong thực tế
+
+### A. Khi làm tính năng mới
+
+- Bước 1: `planner` tạo plan implementation.
+- Bước 2: `tdd-guide` hướng dẫn viết test trước.
+- Bước 3: agent theo ngôn ngữ (`typescript-reviewer`, `python-reviewer`, `go-reviewer`...) kiểm tra theo stack.
+- Bước 4: `code-reviewer` rà soát tổng thể maintainability.
+- Bước 5: `security-reviewer` kiểm tra bảo mật trước merge.
+
+### B. Khi build fail hoặc bug production
+
+- Dùng `build-error-resolver` để khoanh vùng lỗi compile/runtime.
+- Nếu bug liên quan hiệu năng/context, dùng `harness-optimizer`.
+- Nếu bug ở quy trình lặp/tự động nhiều phiên, dùng `loop-operator`.
+
+### C. Khi cần scale công việc cho team
+
+- Chuẩn hóa workflow theo skill-first:
+  - Skill là bề mặt chính.
+  - Command chỉ là entrypoint tương thích.
+- Chọn nhóm skill cốt lõi theo dự án thay vì bật toàn bộ 181 skills ngay từ đầu.
+- Duy trì hooks để tự động kiểm tra, tránh phụ thuộc hoàn toàn vào review thủ công.
+
+### D. Bộ tối thiểu khuyến nghị (starter pack)
+
+- **Agents:** planner, tdd-guide, code-reviewer, security-reviewer, build-error-resolver
+- **Skills:** tdd-workflow, security-review, documentation-lookup, verification-loop
+- **Commands:** `/tdd`, `/code-review`, `/security-scan`, `/build-fix`, `/harness-audit`
+- **Hooks:** pre-edit lint/check + post-edit validation + session summary
+
+### E. Mẹo vận hành hiệu quả
+
+- Không bật quá nhiều MCP/tool cùng lúc để tránh tốn context.
+- Dùng lại checklist quality gate cho mọi PR để giảm sai khác giữa thành viên.
+- Ưu tiên commit nhỏ, rõ mục tiêu, dễ rollback.
