@@ -1,6 +1,6 @@
-**Language:** English | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md) | [Türkçe](docs/tr/README.md)
+**Ngôn ngữ:** [Tiếng Việt](docs/vi-VN/README.md) | [English](README.md) | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md) | [Türkçe](docs/tr/README.md)
 
-# Everything Claude Code
+# EraGenAI
 
 [![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
 [![Forks](https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/network/members)
@@ -17,55 +17,61 @@
 ![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
 
-> **140K+ stars** | **21K+ forks** | **170+ contributors** | **12+ language ecosystems** | **Anthropic Hackathon Winner**
+> **Bản Việt hóa & tái thương hiệu: EraGenAI** | **Tác giả: NhuanLT**
 
 ---
 
 <div align="center">
 
-**Language / 语言 / 語言 / Dil**
+**Ngôn ngữ / Language / 语言 / 語言 / Dil**
 
-[**English**](README.md) | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
+[**Tiếng Việt**](docs/vi-VN/README.md) | [English](README.md) | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
  | [Türkçe](docs/tr/README.md)
 
 </div>
 
 ---
 
-**The performance optimization system for AI agent harnesses. From an Anthropic hackathon winner.**
+**Hệ thống tối ưu hiệu năng cho AI agent harnesses dành cho môi trường production.**
 
-Not just configs. A complete system: skills, instincts, memory optimization, continuous learning, security scanning, and research-first development. Production-ready agents, skills, hooks, rules, MCP configurations, and legacy command shims evolved over 10+ months of intensive daily use building real products.
+Không chỉ là bộ cấu hình. Đây là hệ sinh thái đầy đủ gồm: skills, instinct workflows, tối ưu bộ nhớ, học liên tục, quét bảo mật và quy trình phát triển ưu tiên nghiên cứu. Bộ agents, skills, hooks, rules, cấu hình MCP và command shims được tổ chức để áp dụng thực chiến.
 
-Works across **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Gemini**, and other AI agent harnesses.
+Hoạt động trên **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Gemini** và các AI agent harness khác.
+
+**Thương hiệu hiện tại:** EraGenAI  
+**Tác giả bảo trì:** NhuanLT
+
+**Tài liệu tiếng Việt (tổng quan chức năng + cách dùng với Claude/GPT):**  
+[`docs/vi-VN/FRAMEWORK-OVERVIEW.md`](docs/vi-VN/FRAMEWORK-OVERVIEW.md)
 
 ---
 
-## The Guides
+## Tài liệu hướng dẫn
 
-This repo is the raw code only. The guides explain everything.
+Repo này chủ yếu chứa mã nguồn và cấu hình. Các tài liệu dưới đây giải thích lộ trình sử dụng đầy đủ.
 
 <table>
 <tr>
 <td width="33%">
 <a href="https://x.com/affaanmustafa/status/2012378465664745795">
-<img src="./assets/images/guides/shorthand-guide.png" alt="The Shorthand Guide to Everything Claude Code" />
+<img src="./assets/images/guides/shorthand-guide.png" alt="Hướng dẫn rút gọn cho EraGenAI" />
 </a>
 </td>
 <td width="33%">
 <a href="https://x.com/affaanmustafa/status/2014040193557471352">
-<img src="./assets/images/guides/longform-guide.png" alt="The Longform Guide to Everything Claude Code" />
+<img src="./assets/images/guides/longform-guide.png" alt="Hướng dẫn chuyên sâu cho EraGenAI" />
 </a>
 </td>
 <td width="33%">
 <a href="https://x.com/affaanmustafa/status/2033263813387223421">
-<img src="./assets/images/security/security-guide-header.png" alt="The Shorthand Guide to Everything Agentic Security" />
+<img src="./assets/images/security/security-guide-header.png" alt="Hướng dẫn bảo mật cho hệ thống agent" />
 </a>
 </td>
 </tr>
 <tr>
-<td align="center"><b>Shorthand Guide</b><br/>Setup, foundations, philosophy. <b>Read this first.</b></td>
-<td align="center"><b>Longform Guide</b><br/>Token optimization, memory persistence, evals, parallelization.</td>
-<td align="center"><b>Security Guide</b><br/>Attack vectors, sandboxing, sanitization, CVEs, AgentShield.</td>
+<td align="center"><b>Hướng dẫn rút gọn</b><br/>Thiết lập, nền tảng, triết lý vận hành. <b>Nên đọc trước.</b></td>
+<td align="center"><b>Hướng dẫn chuyên sâu</b><br/>Tối ưu token, lưu ngữ cảnh, evals, và song song hóa.</td>
+<td align="center"><b>Hướng dẫn bảo mật</b><br/>Bề mặt tấn công, sandboxing, sanitization, CVEs, AgentShield.</td>
 </tr>
 </table>
 
