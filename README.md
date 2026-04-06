@@ -46,32 +46,32 @@ Hoạt động trên **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Gem
 
 ---
 
-## The Guides
+## Tài liệu hướng dẫn
 
-This repo is the raw code only. The guides explain everything.
+Repo này chủ yếu chứa mã nguồn và cấu hình. Các tài liệu dưới đây giải thích lộ trình sử dụng đầy đủ.
 
 <table>
 <tr>
 <td width="33%">
 <a href="https://x.com/affaanmustafa/status/2012378465664745795">
-<img src="./assets/images/guides/shorthand-guide.png" alt="The Shorthand Guide to Everything Claude Code" />
+<img src="./assets/images/guides/shorthand-guide.png" alt="Hướng dẫn rút gọn cho EraGenAI" />
 </a>
 </td>
 <td width="33%">
 <a href="https://x.com/affaanmustafa/status/2014040193557471352">
-<img src="./assets/images/guides/longform-guide.png" alt="The Longform Guide to Everything Claude Code" />
+<img src="./assets/images/guides/longform-guide.png" alt="Hướng dẫn chuyên sâu cho EraGenAI" />
 </a>
 </td>
 <td width="33%">
 <a href="https://x.com/affaanmustafa/status/2033263813387223421">
-<img src="./assets/images/security/security-guide-header.png" alt="The Shorthand Guide to Everything Agentic Security" />
+<img src="./assets/images/security/security-guide-header.png" alt="Hướng dẫn bảo mật cho hệ thống agent" />
 </a>
 </td>
 </tr>
 <tr>
-<td align="center"><b>Shorthand Guide</b><br/>Setup, foundations, philosophy. <b>Read this first.</b></td>
-<td align="center"><b>Longform Guide</b><br/>Token optimization, memory persistence, evals, parallelization.</td>
-<td align="center"><b>Security Guide</b><br/>Attack vectors, sandboxing, sanitization, CVEs, AgentShield.</td>
+<td align="center"><b>Hướng dẫn rút gọn</b><br/>Thiết lập, nền tảng, triết lý vận hành. <b>Nên đọc trước.</b></td>
+<td align="center"><b>Hướng dẫn chuyên sâu</b><br/>Tối ưu token, lưu ngữ cảnh, evals, và song song hóa.</td>
+<td align="center"><b>Hướng dẫn bảo mật</b><br/>Bề mặt tấn công, sandboxing, sanitization, CVEs, AgentShield.</td>
 </tr>
 </table>
 
