@@ -1,8 +1,9 @@
 {
-  "name": "ecc-universal",
+  "name": "eragenai-universal",
   "version": "1.10.0",
-  "description": "Complete collection of battle-tested Claude Code configs — agents, skills, hooks, rules, and legacy command shims evolved over 10+ months of intensive daily use by an Anthropic hackathon winner",
+  "description": "Bộ cấu hình và workflow AI agent đầy đủ đã Việt hóa theo thương hiệu EraGenAI: agents, skills, hooks, rules và command shims cho môi trường production",
   "keywords": [
+    "eragenai",
     "claude-code",
     "ai",
     "agents",
@@ -11,7 +12,7 @@
     "mcp",
     "rules",
     "claude",
-    "anthropic",
+    "vietnamese",
     "tdd",
     "code-review",
     "security",
@@ -25,17 +26,17 @@
     "slides"
   ],
   "author": {
-    "name": "Affaan Mustafa",
-    "url": "https://x.com/affaanmustafa"
+    "name": "NhuanLT",
+    "url": "https://github.com/NhuanLT"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/affaan-m/everything-claude-code.git"
+    "url": "git+https://github.com/NhuanLT/eragenai.git"
   },
-  "homepage": "https://github.com/affaan-m/everything-claude-code#readme",
+  "homepage": "https://github.com/NhuanLT/eragenai#readme",
   "bugs": {
-    "url": "https://github.com/affaan-m/everything-claude-code/issues"
+    "url": "https://github.com/NhuanLT/eragenai/issues"
   },
   "files": [
     ".agents/",
